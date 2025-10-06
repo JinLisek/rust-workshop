@@ -1,0 +1,35 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+  "name": "rust-workshop",
+  "build":{
+    "dockerfile": "Dockerfile",
+    "context": ".",
+    "args": {
+    }
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/pre-commit:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot"
+      ],
+      "settings": {
+      }
+    }
+  }
+//   "postStartCommand": {"app": ["bash", "./.devcontainer/post-start.sh"]}
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [8000]
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "pip3 install --user -r requirements.txt",
+  // Configure tool-specific properties.
+  // "customizations": {},
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}
