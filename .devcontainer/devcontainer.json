@@ -19,9 +19,16 @@
         "rust-lang.rust-analyzer"
       ],
       "settings": {
+        "[rust]": {
+            "editor.defaultFormatter": "rust-lang.rust-analyzer",
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "file"
+        },
+        "rust-analyzer.rustfmt.rangeFormatting.enable": true
       }
     }
-  }
+  },
+  "postCreateCommand": "rustup component add rustfmt clippy"
 //   "postStartCommand": {"app": ["bash", "./.devcontainer/post-start.sh"]}
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
